@@ -127,7 +127,7 @@ def delete(id):
     return render_template('delete.html',post=post)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
     
 def connect_db():
     rv = sqlite3.connect(DATABASE)
